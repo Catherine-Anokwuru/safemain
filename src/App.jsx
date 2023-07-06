@@ -17,8 +17,8 @@ import Contact from "./pages/contact/Contact";
 
 const App = () => {
   return (
-    <HashRouter>
-      <Routes>
+    <HashRouter >
+      <Routes >
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Carousel />}>
             {/* <Route path="about" element={<About />} />
