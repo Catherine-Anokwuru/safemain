@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, HashRouter} from "react-router-dom";
 import About from "./pages/about/About";
 import Footer from "./pages/footer/Footer";
 import Carousel from "./pages/hero/Carousel";
@@ -17,7 +17,7 @@ import Contact from "./pages/contact/Contact";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Carousel />}>
@@ -32,7 +32,7 @@ const App = () => {
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 export default App;
