@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, HashRouter} from "react-router-dom";
+import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
 import About from "./pages/about/About";
 import Footer from "./pages/footer/Footer";
 import Carousel from "./pages/hero/Carousel";
@@ -17,13 +17,10 @@ import Contact from "./pages/contact/Contact";
 
 const App = () => {
   return (
-    <HashRouter >
-      <Routes >
+    <HashRouter>
+      <Routes>
         <Route path="/" element={<SharedLayout />}>
-          <Route index element={<Carousel />}>
-            {/* <Route path="about" element={<About />} />
-            <Route path="values" element={<Values />} /> */}
-          </Route>
+          <Route index element={<Carousel />} />
           <Route path="services/decomissioning" element={<Decomissioning />} />
           <Route path="services/engineering" element={<Engineering />} />
           <Route path="services/consultation" element={<Consultation />} />
