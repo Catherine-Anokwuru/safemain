@@ -10,9 +10,9 @@ import Contact from "./pages/contact/Contact";
 
 const App = () => {
   return (
-    <BrowserRouter basename='/safemain'>
+    <HashRouter >
       <Routes>
-        <Route path="/safemain/" element={<SharedLayout />}>
+        <Route path="/safemain/#" element={<SharedLayout />}>
           <Route index element={<Carousel />} />
           <Route path="services/decomissioning" element={<Decomissioning />} />
           <Route path="services/engineering" element={<Engineering />} />
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 export default App;
