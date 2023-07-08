@@ -10,9 +10,9 @@ import Contact from "./pages/contact/Contact";
 
 const App = () => {
   return (
-    <HashRouter basename={import.meta.env.DEV ? "/" : "/safemain/"}>
+    <BrowserRouter basename='/safemain'>
       <Routes>
-        <Route path="/" element={<SharedLayout />}>
+        <Route path="/safemain/" element={<SharedLayout />}>
           <Route index element={<Carousel />} />
           <Route path="services/decomissioning" element={<Decomissioning />} />
           <Route path="services/engineering" element={<Engineering />} />
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 export default App;
