@@ -14,7 +14,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Carousel />} />
-
           <Route path="services/decomissioning" element={<Decomissioning />} />
           <Route path="services/engineering" element={<Engineering />} />
           <Route path="services/consultation" element={<Consultation />} />
