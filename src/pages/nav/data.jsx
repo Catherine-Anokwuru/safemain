@@ -5,6 +5,7 @@ const sublinks = [
   {
     pageId: nanoid(),
     page: "home",
+    url: '/',
     links: [
       {
         // id: '#home',
@@ -29,6 +30,8 @@ const sublinks = [
       },
     ],
   },
+]
+ export const sublinks2 = [
   {
     pageId: nanoid(),
     page: "services",
@@ -59,9 +62,13 @@ const sublinks = [
       },
     ],
   },
+]
+export const sublinks3 = [
   {
     page: "contact",
     pageId: nanoid(),
+    url: "/contact/",
+
     links: [
       {
         id: nanoid(),

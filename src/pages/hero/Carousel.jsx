@@ -6,8 +6,6 @@ import Slider from "react-slick";
 import About from "../about/About";
 import Image from "../image/image";
 import Values from "../values/Values";
-import Footer from "../footer/Footer";
-import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const settings = {
@@ -24,7 +22,7 @@ const Carousel = () => {
   };
   return (
     <>
-      <section className="carousel">
+      <section className="carousel" id="home">
         <Slider {...settings}>
           {list.map((item) => {
             const { id, image, title } = item;
@@ -40,9 +38,9 @@ const Carousel = () => {
           })}
         </Slider>
       </section>
-        <About />
+      <About />
       <Image />
-      <Values key='values'/>
+      <Values key="values" />
     </>
   );
 };

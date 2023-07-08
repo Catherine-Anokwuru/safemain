@@ -13,14 +13,18 @@ const Navbar = () => {
   };
   return (
     <>
-    <nav className="nav" onMouseOver={submenuHandle}>
-      <Link to={'/'}> <img src={logo} alt="logo" className="logo-img" /></Link>
-        <button className="bars" onClick={openSidebar}>
-          <FaBars />
-        </button>
-        <Navlinks />
-        </nav>
-        </>
-        );
+      <nav className="nav" onMouseOver={submenuHandle}>
+        {/* <div className="nav-div"> */}
+          <Link to={"/"}>
+            <img src={logo} alt="logo" className="logo-img" />
+          </Link>
+          <button className="bars" onClick={openSidebar}>
+            <FaBars />
+          </button>
+          <Navlinks />
+        {/* </div> */}
+      </nav>
+    </>
+  );
 };
 export default Navbar;

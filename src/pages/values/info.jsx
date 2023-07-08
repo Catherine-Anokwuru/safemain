@@ -6,7 +6,7 @@ const info = [
     id: nanoid(),
     icon: <FaUserTie/>,
     title: "Professionalism",
-    text: "Upholding a High Level of Professionalism in Our Conduct, Interactions, and the Delivery of Our Services.",
+    text: "Upholding a high level of professionalism in our Conduct, interactions, and the delivery of our services.",
   },
   // {
   //   id: nanoid(),
@@ -18,7 +18,7 @@ const info = [
     id: nanoid(),
     icon: <FaHandshake />,
     title: "Integrity",
-    text: "Conducting Business With Honesty,Transparency and Ethical Behavior, Building Trust And Fostering Long-term Relationships With Our Stakeholders.",
+    text: "Conducting business with honesty, transparency and ethical behaviour, building trust and fostering long-term relationships with our stakeholders.",
   },
   {
     id: nanoid(),
@@ -30,7 +30,7 @@ const info = [
     id: nanoid(),
     icon: <FaSpa />,
     title: "Sustainability",
-    text: " Demonstrating a commitment to environmental responsibility, sustainable practices, and social responsibility in our operations.",
+    text: " Demonstrating a commitment to environmental responsibility, sustainable practices and social responsibility in our operations.",
   },
   // {
   //   id: nanoid(),
@@ -54,7 +54,7 @@ const info = [
     id: nanoid(),
     icon: <FaUsers />,
     title: "Customer Focus",
-    text: "Placing Our Clients At The Center Of Everything We Do,Understanding Their Needs, And Providing Exceptional Customer Service.",
+    text: "Placing our clients at the center of everything we do, understanding their needs, and providing exceptional customer service.",
   },
 ];
 export default info

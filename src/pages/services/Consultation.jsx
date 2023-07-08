@@ -1,6 +1,6 @@
-import image from "../../assets/vessel.jpg";
+import image from "../../assets/service-vessel.jpg";
 import { FaCircle } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 const Consultation = () => {
   return (
     <section className="services">
@@ -8,6 +8,8 @@ const Consultation = () => {
         <div className="bg"></div>
         <h3> Our Services</h3>
       </div>
+
+       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }}>
       <div className="serve-container">
         <h4>Marine Consultation and Vessel Chartering</h4>
         <div className="line"></div>
@@ -21,6 +23,7 @@ const Consultation = () => {
           <FaCircle style={{ color: "#f58220", fontSize: "0.7rem" }} /> and logistics.
         </p>
       </div>
+       </motion.div>
     </section>
   );
 };
