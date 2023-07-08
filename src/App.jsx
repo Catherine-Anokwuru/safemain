@@ -10,9 +10,9 @@ import Contact from "./pages/contact/Contact";
 
 const App = () => {
   return (
-    <HashRouter >
+    <HashRouter basename="/">
       <Routes>
-        <Route path="/safemain/#" element={<SharedLayout />}>
+        <Route path="/" element={<SharedLayout />}>
           <Route index element={<Carousel />} />
           <Route path="services/decomissioning" element={<Decomissioning />} />
           <Route path="services/engineering" element={<Engineering />} />
