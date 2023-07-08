@@ -10,7 +10,7 @@ import Contact from "./pages/contact/Contact";
 
 const App = () => {
   return (
-    <HashRouter basename="/">
+    <HashRouter basename="/safemain/#/">
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Carousel />} />
